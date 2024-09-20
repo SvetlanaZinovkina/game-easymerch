@@ -417,15 +417,19 @@ function Game() {
   $(document).keydown(function (e) {
     switch (e.which) {
       case 87:
+      case 38:
         self.moveHero(0, -1);
         break;
       case 65:
+      case 37:
         self.moveHero(-1, 0);
         break;
       case 83:
+      case 40:
         self.moveHero(0, 1);
         break;
       case 68:
+      case 39:
         self.moveHero(1, 0);
         break;
       case 32:
